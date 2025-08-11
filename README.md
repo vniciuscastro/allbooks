@@ -1,5 +1,7 @@
 ![Integrando seu projeto React com APIs](thumbnail.png)
 
+Boas vindas à API do Allbooks
+
 # AluraBooks
 
 O AluraBooks é uma loja virtual que vende livros da Casa do Código. 
