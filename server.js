@@ -363,6 +363,5 @@ https.createServer({
   key: fs.readFileSync('server.key'),
   cert: fs.readFileSync('server.crt')
 }, server).listen(8000, () => {
-    console.log("BOAS-VINDAS A API DO ALLBOOKS")
-   console.log("API disponível através da URL https://localhost:8000")
+   console.log("Acesse essa API em https://localhost:8000")
 })
