@@ -30,7 +30,7 @@ function emailExiste(email) {
   return userdb.usuarios.findIndex(user => user.email === email) !== -1
 }
 
-server.post('/public/registrar', (req, res) => {
+server.post('/public/cadastrar', (req, res) => {
   const { email, senha, nome, endereco, complemento, cep } = req.body;
 
   if (emailExiste(email)) {
@@ -363,5 +363,5 @@ https.createServer({
   key: fs.readFileSync('server.key'),
   cert: fs.readFileSync('server.crt')
 }, server).listen(8000, () => {
-   console.log("API disponível em https://localhost:8000")
+   console.log("Acesse essa API em https://localhost:8000")
 })
